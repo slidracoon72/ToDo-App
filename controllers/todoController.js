@@ -2,7 +2,8 @@ let bodyParser = require('body-parser');
 let mongoose = require('mongoose');
 
 //connect to Atlas database
-mongoose.connect('mongodb+srv://root:root@todo-an0ru.mongodb.net/test?retryWrites=true&w=majority', function (err) {
+//TODO: update the URL, add your password
+mongoose.connect('mongodb+srv://root:<password>@todo-an0ru.mongodb.net/test?retryWrites=true&w=majority', function (err) {
     if (err) throw err;
     console.log("Connected to MongoDB");
 });
