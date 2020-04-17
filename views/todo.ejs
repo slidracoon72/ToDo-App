@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO APP</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+            integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="/assets/todo-list.js"></script>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id="head">
+    <h1>TO-DO APP</h1>
+    <h2>A Task Reminder in NodeJs and MongoDB</h2>
+</div>
+
+<div id="todo-table">
+    <form>
+        <input type="text" name="item" placeholder="Add your things TODO..." required/>
+        <button type="submit">ADD</button>
+    </form>
+    <ul>
+        <% for(let i = 0; i < todos.length;i++){ %>
+            <li><%= todos[i].item %></li>
+        <% } %>
+    </ul>
+</div>
+<div class="footer">
+    <p>Designed by Rahul Trivedi</p>
+</div>
+</body>
+</html>
